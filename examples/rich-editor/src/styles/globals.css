@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply overflow-x-hidden bg-background text-neutral;
+}
+
+a {
+	@apply text-primary;
+}
+
+/* Typography */
+
+h1,
+.display-1 {
+	@apply font-gilroy text-[48px] font-[700] leading-[48px] md:text-[64px] md:leading-[64px];
+}
+
+h2,
+.display-2 {
+	@apply font-gilroy text-[32px] font-[700] leading-[32px] md:text-[48px] md:leading-[60px];
+}
+
+h3,
+.display-3 {
+	@apply font-gilroy text-[28px] font-[600] leading-[32px] md:text-[32px] md:leading-[36px];
+}
+
+h4,
+.title-1 {
+	@apply font-gilroy text-[18px] font-[700] leading-[24px] md:text-[22px] md:leading-[24px];
+}
+
+h5,
+.title-2 {
+	@apply font-gilroy text-[16px] font-[600] leading-[20px] md:text-[16px] md:leading-[24px];
+}
+
+h6,
+.title-3 {
+	@apply font-gilroy text-[15px] font-[600] leading-[20px] md:text-[12px] md:leading-[20px];
+}
+
+p,
+.large,
+.body-1 {
+	@apply font-nunito text-[15px] font-[400] leading-[20px] md:text-[18px] md:leading-[24px];
+}
+
+p,
+.body,
+.body-2 {
+	@apply font-nunito text-[13px] font-[400] leading-[18px] md:text-[15px] md:leading-[24px];
+}
+
+p,
+.small,
+.body-3 {
+	@apply font-nunito text-[12px] font-[700] leading-[16px] md:text-[12px] md:leading-[20px];
+}
+
+p.caption,
+.caption {
+	@apply font-gilroy text-[11px] font-[600] leading-[16px] tracking-[-0.2px] md:text-[12px] md:leading-[16px];
+}
+
+.button-large {
+	@apply font-gilroy text-[14px] font-[700] leading-[20px] md:text-[14px] md:leading-[20px];
+}
+
+.button-small {
+	@apply font-gilroy text-[12px] font-[700] leading-[16px] md:text-[12px] md:leading-[16px];
+}
+
+.spin-mouse {
+	animation: spin-mouse 10s linear infinite;
+}
+@keyframes spin-mouse {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.highlight-text-primary {
+	transform: translateY(0px);
+	animation-name: highlight-text-primary;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+.highlight-text-primary-2 {
+	transform: translateY(0px);
+	animation-name: highlight-text-primary;
+	animation-duration: 8s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes highlight-text-primary {
+	0%,
+	10%,
+	100% {
+		transform: translateY(0px);
+	}
+	3% {
+	}
+	5% {
+		transform: translateY(-4px);
+	}
+}
+
+.logo-spin {
+	transform: rotate(0deg);
+	animation-name: spin;
+	animation-duration: 12s;
+	animation-delay: 8s;
+	animation-iteration-count: infinite;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	8% {
+		transform: rotate(-15deg);
+	}
+	16% {
+		transform: rotate(362deg);
+	}
+	20% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	padding: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #7c7c7c80;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #000000a0;
+}
+
+.animate-fadein {
+	animation: fadeIn 1s cubic-bezier(1, 0.67, 0, 0.87);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		filter: blur(4px);
+		scale: 1.1;
+	}
+	to {
+		filter: blur(0px);
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+.animate-spinner {
+	animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.hoverable {
+	@apply hover:translate-y-[-4px] active:translate-y-[2px];
+	/* @apply hover:opacity-80 active:opacity-40; */
+	@apply duration-300 active:duration-100;
+}

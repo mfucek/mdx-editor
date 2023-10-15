@@ -1,0 +1,41 @@
+/* Colors */
+
+:root {
+	--color-section: #00000040;
+	--color-background: #101010;
+
+	--color-primary: #189fec;
+	--color-primary-strong: #189fec80;
+	--color-primary-medium: #189fec40;
+	--color-primary-weak: #189fec10;
+
+	--color-neutral: #ffffff;
+	--color-neutral-strong: #ffffff80;
+	--color-neutral-medium: #ffffff40;
+	--color-neutral-weak: #ffffff10;
+
+	--color-info: #50b5ff;
+	--color-info-strong: #50b5ff80;
+	--color-info-medium: #50b5ff40;
+	--color-info-weak: #50b5ff80;
+
+	--color-success: #359a73;
+	--color-success-strong: #359a7380;
+	--color-success-medium: #359a7340;
+	--color-success-weak: #359a7340;
+
+	--color-danger: #db5125;
+	--color-danger-strong: #db5125a0;
+	--color-danger-medium: #db512580;
+	--color-danger-weak: #db512540;
+
+	--color-warning: #cb8a14;
+	--color-warning-strong: #cb8a14a0;
+	--color-warning-medium: #cb8a1480;
+	--color-warning-weak: #cb8a1440;
+
+	--color-special-black: #000000;
+	--color-special-white: #ffffff;
+
+	--color-shadow: rgba(0, 93, 255, 0.25);
+}
