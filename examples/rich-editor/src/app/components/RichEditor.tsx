@@ -12,7 +12,6 @@ import { EditorLine } from './EditorLine';
 // 3. detekcija predefiniranih komponenti
 // 4. enkodiranje predefiniranih komponenti
 // 5. manual edit komponente / trash
-// 6. fix scrolling on rerender
 
 const useSafeLayoutEffect =
 	typeof window !== 'undefined' ? useLayoutEffect : useEffect;

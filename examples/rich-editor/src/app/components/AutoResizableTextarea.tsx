@@ -26,7 +26,7 @@ export const AutoResizableTextarea = forwardRef(function AutoResizableTextarea(
 		const textarea = textareaRef.current;
 		if (textarea) {
 			// Reset height to auto to calculate new height correctly
-			textarea.style.height = '0px';
+			textarea.style.height = 'auto';
 			const newHeight = textarea.scrollHeight;
 			textarea.style.height = newHeight + 'px';
 		}
