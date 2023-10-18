@@ -8,7 +8,6 @@ import { DraggableContainer } from './DraggableContainer';
 import { EditorLine } from './EditorLine';
 
 // 1. kako dodati undo?
-// 2. bug: na prvi klik input ref kaze da je pozicija 0
 // 3. detekcija predefiniranih komponenti
 // 4. enkodiranje predefiniranih komponenti
 // 5. manual edit komponente / trash

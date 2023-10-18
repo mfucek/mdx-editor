@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { Ref, forwardRef, useState } from 'react';
-import { AutoResizableTextarea } from './AutoResizableTextarea';
+import TextareaAutosize from 'react-textarea-autosize';
 import { Button } from './Button';
 
 interface EditorLineProps {
@@ -68,14 +68,14 @@ export const EditorLine = forwardRef(function EditorLine(
 	return (
 		<>
 			<div className="w-full flex gap-2">
-				<AutoResizableTextarea
+				<TextareaAutosize
 					ref={ref}
 					value={value}
 					onChange={onChange}
 					onKeyDown={onKeyDown}
 					onClick={onClick}
 					className={classNames(
-						'w-full hover:bg-neutral-weak bg-transparent py-2 px-4 rounded-lg',
+						'w-full hover:bg-neutral-weak bg-transparent py-2 px-4 rounded-lg outline-none resize-none',
 						isCustomComponent && 'font-mono body-2 text-primary'
 					)}
 				/>
